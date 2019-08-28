@@ -6,6 +6,13 @@
 build/
 DerivedData/
 
+## .DS_Store
+*.DS_Store
+.DS_Store
+.DS_Store?
+*.swp
+*.swo
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
