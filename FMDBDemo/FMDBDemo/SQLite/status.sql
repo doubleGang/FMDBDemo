@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS "T_Status" (
+    "statusid" INTEGER PRIMAYR KEY NOT NULL,
+    "userId" INTEGER PRIMAYR KEY NOT NULL,
+    "status" TEXT
+);

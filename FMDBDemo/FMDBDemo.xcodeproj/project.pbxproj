@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		D90FC330231672750042E067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90FC32E231672750042E067 /* Main.storyboard */; };
 		D90FC332231672750042E067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90FC331231672750042E067 /* Assets.xcassets */; };
 		D90FC335231672750042E067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90FC333231672750042E067 /* LaunchScreen.storyboard */; };
+		D90FC33E231673F50042E067 /* YJSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90FC33D231673F50042E067 /* YJSQLiteManager.swift */; };
+		D90FC3442316788E0042E067 /* status.sql in Resources */ = {isa = PBXBuildFile; fileRef = D90FC3432316788E0042E067 /* status.sql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		D90FC331231672750042E067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D90FC334231672750042E067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D90FC336231672750042E067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90FC33D231673F50042E067 /* YJSQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YJSQLiteManager.swift; sourceTree = "<group>"; };
+		D90FC3432316788E0042E067 /* status.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = status.sql; sourceTree = "<group>"; };
 		F507C11BA078650B5350BCEE /* Pods-FMDBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBDemo.release.xcconfig"; path = "Target Support Files/Pods-FMDBDemo/Pods-FMDBDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +58,6 @@
 				82AAFD8257CD2CE160A13714 /* Pods-FMDBDemo.debug.xcconfig */,
 				F507C11BA078650B5350BCEE /* Pods-FMDBDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +82,7 @@
 		D90FC329231672750042E067 /* FMDBDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D90FC33C231673D90042E067 /* SQLite */,
 				D90FC32A231672750042E067 /* AppDelegate.swift */,
 				D90FC32C231672750042E067 /* ViewController.swift */,
 				D90FC32E231672750042E067 /* Main.storyboard */,
@@ -87,6 +91,15 @@
 				D90FC336231672750042E067 /* Info.plist */,
 			);
 			path = FMDBDemo;
+			sourceTree = "<group>";
+		};
+		D90FC33C231673D90042E067 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				D90FC33D231673F50042E067 /* YJSQLiteManager.swift */,
+				D90FC3432316788E0042E067 /* status.sql */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90FC3442316788E0042E067 /* status.sql in Resources */,
 				D90FC335231672750042E067 /* LaunchScreen.storyboard in Resources */,
 				D90FC332231672750042E067 /* Assets.xcassets in Resources */,
 				D90FC330231672750042E067 /* Main.storyboard in Resources */,
@@ -204,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90FC33E231673F50042E067 /* YJSQLiteManager.swift in Sources */,
 				D90FC32D231672750042E067 /* ViewController.swift in Sources */,
 				D90FC32B231672750042E067 /* AppDelegate.swift in Sources */,
 			);
